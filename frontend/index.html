@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🌿 Crop AI Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌿 Crop Disease Detector</h1>
+
+    <!-- Image Upload -->
+    <input type="file" id="imageInput">
+
+    <!-- Symptoms -->
+    <textarea id="symptoms" placeholder="Enter symptoms..."></textarea>
+
+    <!-- Voice -->
+    <button onclick="startVoice()">🎤 Record Voice</button>
+    <p id="voiceText"></p>
+
+    <!-- Buttons -->
+    <button onclick="predict()">🔍 Detect Disease</button>
+    <button onclick="resetAll()">♻ Reset</button>
+
+    <!-- Loader -->
+    <div id="loader" class="hidden">⏳ Processing...</div>
+
+    <!-- Result -->
+    <h2 id="result"></h2>
+    <p id="tip"></p>
+
+    <!-- Chart -->
+    <canvas id="chart"></canvas>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
